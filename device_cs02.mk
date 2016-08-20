@@ -183,8 +183,8 @@ PRODUCT_DEVICE := cs02
 PRODUCT_MODEL := SM-G350
 
 #OTA Updates
-PRODUCT_PACKAGES += /
-    OTAUpdates
+#PRODUCT_PACKAGES += \
+#    OTAUpdates
 
 # Using my server for now
 ADDITIONAL_DEFAULT_PROPERTIES += \
