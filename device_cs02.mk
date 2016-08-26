@@ -182,12 +182,13 @@ PRODUCT_NAME := full_cs02
 PRODUCT_DEVICE := cs02
 PRODUCT_MODEL := SM-G350
 
+# Building of OTAUpdates from source deactivated. Add the prebuilt apk manually to the package
 #OTA Updates
 #PRODUCT_PACKAGES += \
 #    OTAUpdates
 
 # Using my server for now
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.ota.version=$(shell date +%Y%m%d) \
     ro.ota.romname=SiniTurk_cs02_cm-11.0 \
     ro.ota.manifest=http://timschumi.16mb.com/otaupdates/SiniTurk_cs02_cm-11.0/ota.xml
