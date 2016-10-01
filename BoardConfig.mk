@@ -15,6 +15,8 @@ TARGET_CPU_VARIANT := cortex-a9
 # Kernel
 BOARD_KERNEL_BASE := 0x82000000
 BOARD_KERNEL_PAGESIZE := 4096
+TARGET_KERNEL_SOURCE := kernel/samsung/cs02
+TARGET_KERNEL_CONFIG := bcm21664_hawaii_ss_cs02_rev02_defconfig
 TARGET_PREBUILT_KERNEL := device/samsung/cs02/kernel
 
 # Partition info
