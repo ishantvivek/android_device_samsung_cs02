@@ -9,3 +9,9 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, build/target/product/full.mk)
 
+
+# Insecure ADBD
+# (ro.adb.secure=3)
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.adb.secure=0 \
+	persist.service.adb.enable=1
