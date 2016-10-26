@@ -13,11 +13,11 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a9
 
 # Kernel
-BOARD_KERNEL_BASE := 0x82000000
+BOARD_KERNEL_BASE := 0x81E00000
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_SOURCE := kernel/samsung/cs02
 TARGET_KERNEL_CONFIG := bcm21664_hawaii_ss_cs02_rev02_defconfig
-TARGET_PREBUILT_KERNEL := device/samsung/cs02/kernel
+#TARGET_PREBUILT_KERNEL := device/samsung/cs02/kernel
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 
 # Partition info
@@ -45,8 +45,3 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_INCLUDE_INJECTTWRP := false
 TWRP_EVENT_LOGGING := false
-
-# Compression
-ifeq ($(TARGET_BUILD_VARIANT), eng)
-  BOARD_CUSTOM_BOOTIMG_MK := device/samsung/cs02/customrecoveryimg.mk
-endif
