@@ -188,11 +188,10 @@ PRODUCT_MODEL := SM-G350
 #PRODUCT_PACKAGES += \
 #    OTAUpdates
 
-# Using my server for now
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ota.version=$(shell date +%Y%m%d) \
-    ro.ota.romname=SiniTurk_cs02_cm-11.0 \
-    ro.ota.manifest=http://timschumi.16mb.com/otaupdates/SiniTurk_cs02_cm-11.0/ota.xml
+    ro.ota.romname=cs02_cm-11.0 \
+    ro.ota.manifest=http://siniturk.16mb.com/otaupdates/cs02_cm-11.0/ota.xml
 
 PRODUCT_COPY_FILES += \
     device/samsung/cs02/prebuilts/OTAUpdates/libbypass.so:system/lib/libbypass.so \
